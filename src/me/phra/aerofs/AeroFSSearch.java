@@ -2,20 +2,22 @@
  * AeroFS Challenge - Kenny Gao
  */
 
+package me.phra.aerofs;
+
 /**
  * @author kennygao
  */
 public class AeroFSSearch {
 
-    public enum SearchType {
+    public static enum SearchType {
         LESS_THAN, LESS_THAN_EQUALS, EQUALS, GREATER_THAN_EQUALS, GREATER_THAN
     }
 
-    public enum ResultType {
+    public static enum ResultType {
         NOT_FOUND, FOUND_LESS, FOUND_EXACT, FOUND_GREATER
     }
 
-    public class SearchResult {
+    public static class SearchResult {
         ResultType type;
         int index;
 
